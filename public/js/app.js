@@ -13,7 +13,7 @@ weatherElement.addEventListener('submit', (e) => {
     mess1.textContent = 'Loading...';
     mess2.textContent = '';
 
-    fetch(`http://localhost:3000/weather?address=${location}`).then((resp) => {
+    fetch(`/weather?address=${location}`).then((resp) => {
         resp.json().then((data) => {
             mess1.textContent = '';
             if(data.err) {
