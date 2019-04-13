@@ -20,9 +20,10 @@ weatherElement.addEventListener('submit', (e) => {
                 mess1.textContent = data.err;
                 console.log()
             } else {
-                mess2.textContent = data.location;
-                console.log(data.location);
-                console.log(data.forecast);
+                mess1.textContent = data.location;
+                mess2.textContent = data['weather report'];
+                // console.log(data);
+                // console.log(data['weather report']);
             }
         });
     });
